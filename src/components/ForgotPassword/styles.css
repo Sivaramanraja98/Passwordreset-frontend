@@ -4,9 +4,15 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-}
-
-.form_container {
+  }
+  
+  @media (max-width: 768px) {
+	.container {
+	  width: 100%;
+	}
+  }
+  
+  .form_container {
 	width: 400px;
 	padding: 10px;
 	background-color: white;
@@ -15,37 +21,56 @@
 	flex-direction: column;
 	align-items: center;
 	box-shadow: 0px 3px 3px -2px rgb(0 0 0 / 20%),
-		0px 3px 4px 0px rgb(0 0 0 / 14%), 0px 1px 8px 0px rgb(0 0 0 / 12%);
-}
-
-.input {
+	  0px 3px 4px 0px rgb(0 0 0 / 14%), 0px 1px 8px 0px rgb(0 0 0 / 12%);
+  }
+  
+  @media (max-width: 768px) {
+	.form_container {
+	  width: 100%;
+	  margin: 0 auto;
+	}
+  }
+  
+  .input {
 	outline: none;
 	border: none;
-	width: 370px;
+	width: 100%;
 	padding: 15px;
 	border-radius: 10px;
 	background-color: #edf5f3;
 	margin: 5px 0;
 	font-size: 14px;
-}
-
-.green_btn {
+  }
+  
+  @media (max-width: 768px) {
+	.input {
+	  width: 70%;
+	}
+  }
+  
+  .green_btn {
 	border: none;
 	outline: none;
 	padding: 12px 0;
 	background-color: #3bb19b;
 	color: white;
 	border-radius: 20px;
-	width: 180px;
+	width: 100%;
 	font-weight: bold;
 	font-size: 14px;
 	cursor: pointer;
 	margin: 10px auto;
-}
-
-.error_msg,
-.success_msg {
-	width: 370px;
+  }
+  
+  @media (max-width: 768px) {
+	.green_btn {
+	  width: 80%;
+	}
+  }
+  
+  .error_msg,
+  .success_msg {
+	width: 100%;
 	padding: 15px;
 	margin: 5px 0;
 	font-size: 14px;
@@ -53,8 +78,12 @@
 	color: white;
 	border-radius: 5px;
 	text-align: center;
-}
-
-.success_msg {
-	background-color: #5cdd5c;
-}
+  }
+  
+  @media (max-width: 768px) {
+	.error_msg,
+	.success_msg {
+	  width: 70%;
+	}
+  }
+  
