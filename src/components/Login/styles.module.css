@@ -41,7 +41,7 @@
 .input {
 	outline: none;
 	border: none;
-	width: 370px;
+	width: 100%;
 	padding: 15px;
 	border-radius: 10px;
 	background-color: #edf5f3;
@@ -96,3 +96,16 @@
 	color: white;
 	margin: 10px;
 }
+
+@media (max-width: 768px) {
+	.login_form_container {
+	  width: 100%;
+	  flex-direction: column;
+	}
+	.left {
+	  flex: 1;
+	}
+	.right {
+	  flex: 1;
+	}
+  }
