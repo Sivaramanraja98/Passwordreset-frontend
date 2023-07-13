@@ -58,3 +58,33 @@
 .success_msg {
 	background-color: #5cdd5c;
 }
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    width: 100%;
+    height: 70vh;
+  }
+
+  .form_container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .input {
+    width: 70%;
+  }
+
+  .green_btn {
+    width: 80%;
+  }
+
+  .error_msg,
+  .success_msg {
+    width: 70%;
+  }
+}
