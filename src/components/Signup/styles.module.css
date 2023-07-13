@@ -101,3 +101,16 @@
 	color: white;
 	margin: 10px;
 }
+
+@media (max-width: 768px) {
+	.signup_form_container {
+	  width: 100%;
+	  flex-direction: column;
+	}
+	.left {
+	  flex: 1;
+	}
+	.right {
+	  flex: 1;
+	}
+  }
